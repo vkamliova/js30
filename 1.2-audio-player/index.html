@@ -10,9 +10,43 @@
 </head>
 
 <body>
-    <main>
-
+    <main class="player">
+        <div class="pictures">
+            <div class="album-img"></div>
+            <div class="album-img"></div>
+            <div class="album-img"></div>
+            <div class="album-img"></div>
+            <div class="album-img"></div>
+        </div>
+        <div class="controls">
+            <div class="progress">
+                <div class="filled-progress"></div>
+            </div>
+            <div class="time">
+                <div class="current">0:00</div>
+                <div class="duration"></div>
+            </div>
+            <div class="track">
+                <div class="group"></div>
+                <div class="single"></div>
+            </div>
+            <div class="volume">
+                <audio src class="audio" preload="metadata"></audio>
+                <div class="btn-sound"></div>
+                <div class="volume-line">
+                    <div class="filled-volume"></div>
+                </div>
+                <div class="btn-repeat"></div>
+            </div>
+            <div class="btns">
+                <img src="./assets/btn/icons8-back.png" alt="back" class="btn-back">
+                <img src="./assets/btn/icons8-play.png" alt="play" class="btn-play">
+                <img src="./assets/btn/icons8-pause.png" alt="pause" class="btn-pause">
+                <img src="./assets/btn/icons8-next.png" alt="btn-next" class="btn-next">
+            </div>
+        </div>
     </main>
+
     <footer>
         <div class="footer-content">
             <a href="https://rs.school/js-stage0/">
