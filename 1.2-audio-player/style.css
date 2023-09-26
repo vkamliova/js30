@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-
 }
 
 body {
@@ -12,18 +11,88 @@ body {
   padding: 0;
 }
 
+/* main */
 
+.player {
+  width: 400px;
+  margin: auto;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #adadad;
+  border-radius: 4%;
+  box-shadow: 0px 0px 8px 9px rgb(0 0 0 / 60%);
+  row-gap: 40px;
+  background-image: url("assets/image/fon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pictures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  box-shadow: 0px 0px 8px 9px rgb(0 0 0 / 60%);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #c7c4c4e8;
+  min-width: 100%;
+  padding: 20px 0px;
+  row-gap: 3px;
+}
+
+.progress {
+  width: 90%;
+  height: 15px;
+  border: 1px solid rgb(0, 4, 255);
+  cursor: pointer;
+  display: flex;
+  border-radius: 25px;
+}
+
+.filled-progress {
+  background: rgb(176, 0, 0);
+  width: 0%;
+  position: relative;
+  cursor: pointer;
+}
+
+.filled-progress::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -16px;
+  height: 15px;
+  width: 15px;
+  border: 1px outset rgb(0, 4, 255);
+  border-radius: 109px;
+  background: rgb(207, 5, 52);
+  cursor: pointer;
+}
 
 /* footer */
 
 .footer-content {
-  background-color: #333333f3;
   padding: 15px 0 10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   min-width: calc(100vw - 20px);
-  color: #c2cdcf;
+  color: #000000;
+  font-size: 1.3rem;
+  background-image: url(assets/image/fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
 }
 
 .about-me-content {
@@ -31,11 +100,13 @@ body {
 }
 
 .footer-content > a {
-  color: #c2cdcf;
+  color: #000000;
+  background-color: #ecececc0;
+  border-radius: 5%;
 }
 
 .footer-content > a:hover {
-  color: #000000;
+  color: #c2cdcf;
 }
 
 .rss {
@@ -45,6 +116,11 @@ body {
   background-repeat: no-repeat;
 }
 
+.year {
+  background-color: #ffffff;
+  border-radius: 5%;
+}
+
 .github {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
