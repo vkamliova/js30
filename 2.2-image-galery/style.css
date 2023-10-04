@@ -47,11 +47,14 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 30%);
   grid-gap: 10px;
+  align-items: start;
+  justify-content: center;
 }
 
 .image-container img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* footer */
