@@ -13,7 +13,7 @@ body {
   font-family: "Comfortaa", cursive;
   font-family: "Mooli", sans-serif;
   font-size: 1.2rem;
-  max-width: calc(100vw - 20px);
+  max-width: 1440px;
 }
 
 /* header */
@@ -78,7 +78,7 @@ button {
 .image-container img {
   width: 100%;
   min-height: 100%;
-  max-height: 250px;
+  max-height: 280px;
   object-fit: cover;
 }
 
