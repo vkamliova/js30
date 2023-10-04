@@ -14,7 +14,6 @@ body {
   font-family: "Mooli", sans-serif;
   font-size: 1.2rem;
   max-width: calc(100vw - 20px);
-
 }
 
 /* header */
@@ -40,6 +39,19 @@ button {
   width: 85px;
   height: 35px;
   border-radius: 50px;
+}
+
+/* main */
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-gap: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
 }
 
 /* footer */
