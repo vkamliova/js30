@@ -13,7 +13,10 @@
 
 <body>
     <header>
-        <input type="text" id="searchInput" placeholder="Что вы ищите?">
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Что вы ищите?">
+            <span id="clearSearchBtn" class="clear-search-btn">&#10006;</span>
+        </div>
         <button onclick="searchImages()">Поиск</button>
     </header>
 

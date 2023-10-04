@@ -62,3 +62,27 @@ searchInput.addEventListener("keypress", function(event) {
         searchImages();
     }
 });
+
+const clearSearchBtn = document.getElementById("clearSearchBtn");
+
+// Показать или скрыть крестик в зависимости от содержимого поля ввода
+function toggleClearSearchBtn() {
+    if (searchInput.value.trim() !== "") {
+        clearSearchBtn.style.display = "inline-block";
+    } else {
+        clearSearchBtn.style.display = "none";
+    }
+}
+
+// Удалить поисковый запрос и отобразить placeholder при клике на крестик
+clearSearchBtn.addEventListener("click", function() {
+    searchInput.value = "";
+    clearSearchBtn.style.display = "none";
+    searchInput.focus();
+});
+
+// Вызов функции toggleClearSearchBtn() при изменении содержимого поля ввода
+searchInput.addEventListener("input", toggleClearSearchBtn);
+
+// Вызов функции toggleClearSearchBtn() при загрузке страницы для установки начального состояния
+toggleClearSearchBtn();
